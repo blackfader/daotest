@@ -10,6 +10,7 @@ RUN rpm -ivh http://mirrors.yun-idc.com/epel/6/x86_64/epel-release-6-8.noarch.rp
 RUN yum install -y nginx  && rm -rf /var/cache/yum
 
 RUN echo 'hello docker!' >> /usr/share/nginx/html/test.html
+RUN echo 'I I I I am docker!' >> /usr/share/nginx/html/index.html
 
 #ENTRYPOINT
 ENTRYPOINT ["nginx"]
